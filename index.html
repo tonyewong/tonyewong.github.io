@@ -1,67 +1,36 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="style.css">
-      <script src="https://code.jquery.com/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-      <script src="https://cdn.rawgit.com/jusleg/updateYourYearPLZ/111cb805/updateYourYearPLZ.js"></script>
-
-      <title>Tony E. Wong</title>
-    </head>
-
-    <body>
-      <section class="fullHeight" id="welcome">
-        <div class="text-center vertical-center blockRel">
-          <p class="bigText" id="name">Hey! I'm Tony</p>
-          <p class="secondHeadline" id="secondHeadline">I'm a professor at The University of Colorado Boulder.</p>
-        </div>
-      </section>
-      <section id="description">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              <span class="mediumText">Bio</span><hr>
-                <p>Fill in your bio here!</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="projects" class="paddingTopped">
-        <div class="container">
-          <span class="mediumText">Projects</span><hr>
-          <div class="row">
-            <div class="col-sm-4 col-md-4 paddingBottom">
-              <div style='position:relative;padding-bottom:100%;width:100%'>
-                <iframe src='todo' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe>
-              </div>
-              <p class="text-center"><a href="https://github.com/jusleg/storyflow" class="normal">TODO</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <ul style="list-style:none;padding-left:0;font-size:1.3em;">
-          	<li><strong><a href="TODO">TODO</a></strong> - TODO</li>
-          </ul>
-        </div>
-      </section>
-      <section id="footerSection" class="paddingToppedSmall">
-        <div class="text-center paddingBottom">
-          <p class="iconFooter">
-            <!-- <a href="http://linkedin.com/in/TODO" class="a"><i class="fa fa-linkedin"></i></a>&nbsp;&nbsp; -->
-            <a href="mailto:anthony.e.wong@colorado.edu" class="b"><i class="fa fa-envelope"></i></a>&nbsp;&nbsp;
-            <a href="http://github.com/tonyewong" class="c"><i class="fa fa-github"></i></a>&nbsp;&nbsp;
-            <!-- <a href="http://twitter.com/TODO" class="d"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp; -->
-            <!-- <a href="http://medium.com/@TODO" class="e"><i class="fa fa-medium"></i></a>&nbsp;&nbsp; -->
-            <!-- <a href="https://keybase.io/TODO" class="f"><i class="fa fa-key"></i></a> -->
-          </p>
-        </div>
-        <div class="text-center">
-          <p class="footer">Tony Wong <span id="updateYourYearPLZ"></span></p>
-        </div>
-      </section>
-    </body>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Tony E. Wong</title>
+    <link rel="stylesheet" href="style.css" media="screen" sizes="any">
+  </head>
+  <body>
+    <aside class="profile-card">
+      <header>
+        <a onclick="trackClick('profilepic')" href="https://tonyewong.github.io/home/" target="_blank" rel="noopener">
+          <img src="https://github.com/tonyewong.png"/>
+        </a>
+        <h1>Tony E. Wong</h1>
+        <h2></h2>
+      </header>
+      <div class="profile-bio">
+        <p></p>
+      </div>
+      <ul class="profile-social-links">
+        <li onclick="trackClick()">
+          <!-- <a href="mailto:anthony.e.wong@colorado.edu" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <path d="M31.983 7.25c0.031-0.192 0.006-0.39-0.077-0.571-0.252-1.107-1.053-1.679-2.406-1.679h-26c-1.19 0-2.472 0.438-3.103 1.296-0.054 0.042-0.106 0.088-0.153 0.143-0.202 0.232-0.272 0.532-0.227 0.814-0.009 0.081-0.017 0.162-0.017 0.247v16c0 1.657 1.843 3.5 3.5 3.5h26c1.657 0 2.5-1.843 2.5-3.5v-16c0-0.088-0.012-0.166-0.017-0.25zM3.5 7l26.014-0-13.514 10.77-13.459-10.726c0.306-0.056 0.683-0.044 0.959-0.044zM29.5 25h-26c-0.551 0-1.5-0.948-1.5-1.5v-14.326l13.345 10.677c0.188 0.163 0.421 0.244 0.655 0.244s0.467-0.081 0.655-0.244l13.345-10.676v14.326c0 0.552 0.052 1.5-0.5 1.5z"/>
+            </svg>
+          </a> -->
+          <a href="https://github.com/tonyewong/" target="_blank" rel="noopener">
+            <svg viewbox="0 0 32 32">
+              <path fill="#000" d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM25.502 25.502c-1.235 1.235-2.672 2.204-4.272 2.881-0.406 0.172-0.819 0.323-1.238 0.453v-2.398c0-1.26-0.432-2.188-1.297-2.781 0.542-0.052 1.039-0.125 1.492-0.219s0.932-0.229 1.438-0.406 0.958-0.388 1.359-0.633 0.786-0.563 1.156-0.953 0.68-0.833 0.93-1.328 0.448-1.089 0.594-1.781 0.219-1.456 0.219-2.289c0-1.615-0.526-2.99-1.578-4.125 0.479-1.25 0.427-2.609-0.156-4.078l-0.391-0.047c-0.271-0.031-0.758 0.083-1.461 0.344s-1.492 0.688-2.367 1.281c-1.24-0.344-2.526-0.516-3.859-0.516-1.344 0-2.625 0.172-3.844 0.516-0.552-0.375-1.075-0.685-1.57-0.93s-0.891-0.411-1.188-0.5-0.573-0.143-0.828-0.164-0.419-0.026-0.492-0.016-0.125 0.021-0.156 0.031c-0.583 1.479-0.635 2.839-0.156 4.078-1.052 1.135-1.578 2.51-1.578 4.125 0 0.833 0.073 1.596 0.219 2.289s0.344 1.286 0.594 1.781 0.56 0.938 0.93 1.328 0.755 0.708 1.156 0.953 0.854 0.456 1.359 0.633 0.984 0.313 1.438 0.406 0.95 0.167 1.492 0.219c-0.854 0.583-1.281 1.51-1.281 2.781v2.445c-0.472-0.14-0.937-0.306-1.394-0.5-1.6-0.677-3.037-1.646-4.272-2.881s-2.204-2.672-2.881-4.272c-0.7-1.655-1.055-3.414-1.055-5.23s0.355-3.575 1.055-5.23c0.677-1.6 1.646-3.037 2.881-4.272s2.672-2.204 4.272-2.881c1.655-0.7 3.415-1.055 5.23-1.055s3.575 0.355 5.23 1.055c1.6 0.677 3.037 1.646 4.272 2.881s2.204 2.672 2.881 4.272c0.7 1.655 1.055 3.415 1.055 5.23s-0.355 3.575-1.055 5.23c-0.677 1.6-1.646 3.037-2.881 4.272z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </aside>
+  </body>
 </html>
