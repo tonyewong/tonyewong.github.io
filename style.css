@@ -81,6 +81,16 @@ a{
     text-decoration: none;
 }
 
+a.register:link{
+    color: #3C948B;
+    text-decoration: none;
+}
+
+a.register:visited{
+		color: #523E7C;
+    text-decoration: none;
+}
+
 a.visited{
 		color: #523E7C;
 		text-decoration: none;
