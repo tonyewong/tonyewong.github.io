@@ -13,13 +13,17 @@ html,body{
     transform: translateY(-50%);
 }
 .bigText{
-    font-size:5.6em;
+    font-size:4.5em;
     padding-left: 15px;
     padding-right: 15px;
 }
 
 .mediumText{
     font-size:2.8em; 
+}
+
+.emphText{
+    font-size:1.5em; 
 }
 
 .bfText{
